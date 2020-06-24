@@ -1,0 +1,25 @@
+
+#
+# from device/samsung/a70q/system.prop
+#
+#Phone early start enable flag
+sys.config.phone_start_early=true
+#Cmc properties
+ro.cmc.device_type=pd
+ro.cmc.version=2.0
+#Monetization app helo appsflyer setting
+ro.appsflyer.preinstall.path=/system/etc/pre_install.appsflyer
+#Monetization app Snapchat setting
+ro.channel.com.snapchat.android=SAMSUNG-PRELOAD-07012019
+#system prop for Bluetooth SOC type
+vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+#Thermal balancing windows of smb1390
+persist.vendor.cp.qc4.min_delta_decidegc=-80
+persist.vendor.cp.qc4.max_delta_decidegc=-40
+persist.vendor.cp.qc3_min_delta_decidegc=-80
+persist.vendor.cp.qc3_max_delta_decidegc=-40
+# end of device/samsung/a70q/system.prop
+
+#
