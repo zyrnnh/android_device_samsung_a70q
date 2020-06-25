@@ -123,7 +123,9 @@ PRODUCT_PACKAGES += \
 
 
 
-
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.samsung-a70q
 
 
 
