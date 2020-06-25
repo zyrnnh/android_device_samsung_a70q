@@ -144,7 +144,9 @@ TARGET_USE_QTI_BT_STACK := true
 
 
 
-
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_a70q
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 
 
