@@ -361,7 +361,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sm6150
     
-    
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service    
     
 # Touchscreen
 PRODUCT_PACKAGES += \
