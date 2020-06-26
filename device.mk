@@ -159,7 +159,10 @@ PRODUCT_PACKAGES += \
 
 
 
-
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.rc
 
 
 
