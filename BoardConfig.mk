@@ -262,7 +262,9 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 
-
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno612
 
 
 
