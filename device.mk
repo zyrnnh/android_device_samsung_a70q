@@ -446,5 +446,17 @@ PRODUCT_PACKAGES += \
 
 
 
+
+
+
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbthost_if
+
+
+
+
+
 # Inherit vendor
 $(call inherit-product, vendor/samsung/a70q/a70q-vendor.mk)
