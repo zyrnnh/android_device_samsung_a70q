@@ -444,19 +444,23 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
 
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 
-
-
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
 
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbthost_if
 
-
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 
 
 # Inherit vendor
-$(call inherit-product, vendor/samsung/a70q/a70q-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a70q/a70q-vendor.mk)
