@@ -306,5 +306,23 @@ PRODUCT_PACKAGES += \
 
 
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.5-impl \
+    android.hardware.camera.provider@2.5-service_64 \
+    libxml2 \
+    Snap \
+    vendor.qti.hardware.camera.device@1.0.vendor
+
+
+
+
+
+
+
+
+
+
+
 # Inherit vendor
 $(call inherit-product, vendor/samsung/a70q/a70q-vendor.mk)
