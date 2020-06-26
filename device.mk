@@ -128,7 +128,9 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-a70q
 
 
-
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung
 
 # RIL
 PRODUCT_PACKAGES += \

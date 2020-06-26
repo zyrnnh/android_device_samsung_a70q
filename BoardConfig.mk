@@ -142,7 +142,8 @@ QCOM_BT_USE_BTNV := true
 TARGET_USE_QTI_BT_STACK := true
 
 
-
+# Keymaster
+TARGET_KEYMASTER_VARIANT := samsung
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_a70q
