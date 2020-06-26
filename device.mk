@@ -217,7 +217,9 @@ PRODUCT_PACKAGES += \
     lights.qcom
 
 
-
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
 
 
 
