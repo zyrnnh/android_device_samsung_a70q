@@ -268,6 +268,27 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno612
 
 
 
+# Charger Mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
