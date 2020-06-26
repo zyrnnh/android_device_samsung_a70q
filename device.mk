@@ -415,7 +415,13 @@ PRODUCT_PACKAGES += \
     
     
     
-    
+
+# IPACM
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal    
     
     
     
