@@ -188,8 +188,11 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 
 
-
-
+#VNDK
+BOARD_VNDK_VERSIONS := current
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
 
 -include vendor/samsung/a70q/BoardConfigVendor.mk

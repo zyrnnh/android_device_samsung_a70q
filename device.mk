@@ -222,7 +222,9 @@ PRODUCT_PACKAGES += \
     SamsungDoze
 
 
-
+#VNDK
+PRODUCT_PACKAGES += 
+    vndk_package
 
 
 
