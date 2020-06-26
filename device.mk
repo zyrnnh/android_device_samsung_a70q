@@ -462,5 +462,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 
 
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+-include $(LOCAL_PATH)/vendor_prop.mk
+
+
+
 # Inherit vendor
 $(call inherit-product-if-exists, vendor/samsung/a70q/a70q-vendor.mk)
