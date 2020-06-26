@@ -238,7 +238,9 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a70q
 TARGET_RECOVERY_DEVICE_MODULES := libinit_a70q
 
 
-
+# FM
+BOARD_HAVE_QCOM_FM := true
+BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 
 

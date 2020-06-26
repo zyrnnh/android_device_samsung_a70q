@@ -156,6 +156,11 @@ PRODUCT_COPY_FILES += \
 
 
 
+ # FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
 
 
