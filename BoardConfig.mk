@@ -134,6 +134,15 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 
 
+# Dex
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT ?= true
+  endif
+endif
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
+
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 BOARD_HAVE_BLUETOOTH := true
