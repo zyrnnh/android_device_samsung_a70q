@@ -399,21 +399,7 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl    
     
     
-    
-# OMX
-PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libgui_vendor \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVidcCommon \
-    libstagefrighthw    
+     
     
     
     
