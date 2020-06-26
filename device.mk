@@ -130,7 +130,16 @@ PRODUCT_PACKAGES += \
 
 
 
-
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.3-radio-service.a70q \
+    vendor.samsung.hardware.radio@1.2.vendor \
+    android.hardware.radio.config@1.0 \
+    libjson \
+    librmnetctl \
+    libxml2 \
+    libprotobuf-cpp-full \
+    libtrafficcontrol-spoofer
 
 
 # Wifi
@@ -223,7 +232,7 @@ PRODUCT_PACKAGES += \
 
 
 #VNDK
-PRODUCT_PACKAGES += 
+PRODUCT_PACKAGES += \
     vndk_package
 
 
