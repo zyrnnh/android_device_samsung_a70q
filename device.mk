@@ -304,7 +304,11 @@ PRODUCT_PACKAGES += \
     vndk_package
 
 
-
+# Sensor
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
+    libsensorndkbridge
 
 # Camera
 PRODUCT_PACKAGES += \
