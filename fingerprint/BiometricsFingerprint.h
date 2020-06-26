@@ -17,7 +17,7 @@
 #ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H
 
-#include <vendor/samsung/hardware/biometrics/fingerprint/3.0/ISecBiometricsFingerprint.h>
+#include <vendor/samsung/hardware/biometrics/fingerprint/2.1/ISecBiometricsFingerprint.h>
 #include <hardware/fingerprint.h>
 #include <hardware/hardware.h>
 #include <hidl/MQDescriptor.h>
@@ -37,10 +37,10 @@ using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::hardware::hidl_array;
-using ::android::hardware::biometrics::fingerprint::V3_0::IBiometricsFingerprintClientCallback;
-using ::android::hardware::biometrics::fingerprint::V3_0::RequestStatus;
-using ::android::hardware::biometrics::fingerprint::V3_0::FingerprintError;
-using ::android::hardware::biometrics::fingerprint::V3_0::FingerprintAcquiredInfo;
+using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback;
+using ::android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
+using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintError;
+using ::android::hardware::biometrics::fingerprint::V2_1::FingerprintAcquiredInfo;
 
 struct SecBiometricsFingerprint : public ISecBiometricsFingerprint {
     SecBiometricsFingerprint();
@@ -49,7 +49,7 @@ struct SecBiometricsFingerprint : public ISecBiometricsFingerprint {
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static ISecBiometricsFingerprint* getInstance();
 
-    // Methods from ::android::hardware::biometrics::fingerprint::V3_0::IBiometricsFingerprint follow.
+    // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint follow.
     Return<uint64_t> setNotify(
         const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
     Return<uint64_t> preEnroll() override;
@@ -96,11 +96,11 @@ struct SecBiometricsFingerprint : public ISecBiometricsFingerprint {
 };
 
 }  // namespace implementation
-}  // namespace V3_0
+}  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace samsung
 }  // namespace vendor
 
-#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V3_0_BIOMETRICSFINGERPRINT_H
+#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_1_BIOMETRICSFINGERPRINT_H

@@ -29,11 +29,11 @@ LOCAL_SHARED_LIBRARIES := \
     libhidltransport \
     liblog \
     libutils \
-    android.hardware.biometrics.fingerprint@3.0 \
-    vendor.samsung.hardware.biometrics.fingerprint@3.0
+    android.hardware.biometrics.fingerprint@2.1 \
+    vendor.samsung.hardware.biometrics.fingerprint@2.1
 
-LOCAL_MODULE := vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
-LOCAL_INIT_RC := vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+LOCAL_MODULE := vendor.samsung.hardware.biometrics.fingerprint@2.1-service.a70q
+LOCAL_INIT_RC := vendor.samsung.hardware.biometrics.fingerprint@2.1-service.a70q.rc
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := samsung

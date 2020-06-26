@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc"
+#define LOG_TAG "vendor.samsung.hardware.biometrics.fingerprint@2.1-service.a70q"
 
 #include <android-base/logging.h>
 
@@ -32,10 +32,10 @@ namespace samsung {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V3_0 {
+namespace V2_1 {
 namespace implementation {
 
-using RequestStatus = android::hardware::biometrics::fingerprint::V3_0::RequestStatus;
+using RequestStatus = android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
 ISecBiometricsFingerprint* SecBiometricsFingerprint::sInstance = nullptr;
 
@@ -147,7 +147,7 @@ Return<uint64_t> SecBiometricsFingerprint::setNotify(
     const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
     std::lock_guard<std::mutex> lock(mClientCallbackMutex);
     mClientCallback = clientCallback;
-    // This is here because HAL 3.0 doesn't have a way to propagate a
+    // This is here because HAL 2.1 doesn't have a way to propagate a
     // unique token for its driver. Subsequent versions should send a unique
     // token for each call to setNotify(). This is fine as long as there's only
     // one fingerprint device on the platform.

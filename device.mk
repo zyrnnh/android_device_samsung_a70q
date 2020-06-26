@@ -239,11 +239,10 @@ PRODUCT_PACKAGES += \
 
 
 
-
-# Fingerprint
+# Fingerprint feature
 PRODUCT_PACKAGES += \
-    vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.rc
+    vendor.samsung.hardware.biometrics.fingerprint@2.1-service.a70q \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.a70q
 
 
 # Public Libraries

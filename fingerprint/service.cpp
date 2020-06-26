@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc"
+#define LOG_TAG "vendor.samsung.hardware.biometrics.fingerprint@2.1-service.a70q"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -25,8 +25,8 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::samsung::hardware::biometrics::fingerprint::V3_0::ISecBiometricsFingerprint;
-using vendor::samsung::hardware::biometrics::fingerprint::V3_0::implementation::SecBiometricsFingerprint;
+using vendor::samsung::hardware::biometrics::fingerprint::V2_1::ISecBiometricsFingerprint;
+using vendor::samsung::hardware::biometrics::fingerprint::V2_1::implementation::SecBiometricsFingerprint;
 
 using android::OK;
 using android::sp;
