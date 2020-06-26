@@ -220,4 +220,34 @@ TARGET_USES_YCRCB_CAMERA_PREVIEW := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+
+
+
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a70q
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a70q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -include vendor/samsung/a70q/BoardConfigVendor.mk
