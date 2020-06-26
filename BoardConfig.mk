@@ -258,7 +258,8 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 
 
-
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 
 
