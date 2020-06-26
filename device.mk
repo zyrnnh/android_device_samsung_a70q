@@ -204,14 +204,13 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.3-radio-service.a70q \
-    vendor.samsung.hardware.radio@1.2.vendor \
-    android.hardware.radio.config@1.0 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.0 \
     libjson \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full \
-    libtrafficcontrol-spoofer
+    libprotobuf-cpp-full
 
 
 # Wifi
